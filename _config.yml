@@ -1,109 +1,57 @@
 ###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website.
+### Jamshaid Ali - Computer Engineering Portfolio
+### Roll Number: 2025-BSCPE-165
 ###########################################################
 
-############################
 # --- Required options --- #
-############################
+title: "Jamshaid Ali | Portfolio"
+author: "Jamshaid Ali"
 
-# Name of website
-title: My website
-
-# Your name to show in the footer
-author: Some Person
-
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
-
+# --- Navigation Bar (The 4 Required Pages) --- #
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Home: ""             # Your main landing page (Fixed info)
+  About: "about"       # About page
+  Contact Us: "contact" # Contact page
+  Blog: "blog"         # Page containing all your posts
 
-################
 # --- Logo --- #
-################
-
-# Image to show in the navigation bar - works best with a square image
 avatar: "/assets/img/avatar-icon.png"
-
-# By default, the image is cut into a circle.
 round-avatar: true
 
-#####################################
-# --- Footer social media links --- #
-#####################################
-
+# --- Footer & RSS --- #
 social-network-links:
-  email: "someone@example.com"
-  rss: true
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "your.email@example.com"
+  github: "your-github-username"
+  linkedin: "your-linkedin-username"
 
-# If you want your website to generate an RSS feed, provide a description
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: "Jamshaid Ali | Dept: Computer Engineering | Roll No: 2025-BSCPE-165"
 
-###########################
 # --- General options --- #
-###########################
+# Crucial: This moves post listing from home to the /blog page
+paginate_path: "/blog/page:num/"
 
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
-  reddit: false
-
-url-pretty: "MyWebsite.com"
+url-pretty: "JamshaidAli.com"
 title-on-all-pages: true
 excerpt_length: 50
 feed_show_excerpt: true
 feed_show_tags: true
 post_search: true
 edit_page_button: true
-navbar-var-length: false
 
-######################################
-# --- Colours / background image --- #
-######################################
-
+# --- Colours --- #
 page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+text-col: "#333333"
+link-col: "#1A73E8"
+hover-col: "#1557B0"
 
-####################
 # --- Misc --- #
-####################
-
+timezone: "Asia/Karachi"
 date_format: "%B %-d, %Y"
-
-# Output options
-timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
 
-kramdown:
-  input: GFM
-
-# Default YAML values
 defaults:
   - scope:
       path: ""
@@ -116,17 +64,6 @@ defaults:
       path: ""
     values:
       layout: "page"
-
-# Exclude these files from production site
-exclude:
-  - CHANGELOG.md
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - screenshot.png
-  - docs/
 
 plugins:
   - jekyll-paginate
